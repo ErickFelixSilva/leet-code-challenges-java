@@ -43,6 +43,6 @@ public class RemoveZeroSumConsecutivesTest {
         listNode = new ListNode(1);
         listNode.add(0).add(2).add(-3);
         answer = solution.removeZeroSumSublists(listNode);
-        assertEquals(String.valueOf(answer), "[]");
+        assertEquals(answer, null);
     }
 }

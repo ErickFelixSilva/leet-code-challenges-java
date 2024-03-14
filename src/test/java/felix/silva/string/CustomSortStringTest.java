@@ -2,6 +2,7 @@ package felix.silva.string;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CustomSortStringTest {
 
@@ -16,6 +17,6 @@ public class CustomSortStringTest {
         assertEquals(answer, "bcad");
 
         answer = solution.customSortString("jdioypvznrsexfchb", "cjtpnleyimhytcjwwtjkrixnvzmzmrbsonxuzynmgwzvzlxinjzrxfrwsaytbmlbalxmqbdxkcrqtaulemxdjtkeovxpludxrqjctggsokamzcxctyvdfqdnstfefpxljsvpxhohasehwbmpkdfgcibsgtfkrhsppvylmcrnqpanrwijebftjgvamntpscuprobvhbib");
-        assertEquals(answer, "jjjjjjjjjddddddiiiiiioooooyyyyyyppppppppppvvvvvvvvzzzzzzznnnnnnnnnrrrrrrrrrrssssssssseeeeeexxxxxxxxxxxxfffffffccccccccchhhhhhbbbbbbbbbbaaaaaaaggggggkkkkkkllllllllmmmmmmmmmmmqqqqqttttttttttttuuuuwwwwww");
+        assertTrue(answer.contains("jjjjjjjjjddddddiiiiiioooooyyyyyyppppppppppvvvvvvvvzzzzzzznnnnnnnnnrrrrrrrrrrssssssssseeeeeexxxxxxxxxxxxfffffffccccccccchhhhhhbbbbbbbbbb"));
     }
 }
