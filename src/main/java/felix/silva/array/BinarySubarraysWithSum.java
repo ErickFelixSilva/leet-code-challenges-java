@@ -1,8 +1,5 @@
 package felix.silva.array;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class BinarySubarraysWithSum {
     public int numSubarraysWithSum(int[] nums, int goal) {
         int start = 0, end = 0, sum = 0, count = 0;
