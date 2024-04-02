@@ -37,11 +37,6 @@ public class CustomSortString {
 //    }
 
     public String customSortString(String order, String s) {
-        Map<Character, Integer> orderMap = new HashMap<>();
-        for (int i = 0; i < order.length(); i++) {
-            orderMap.put(order.charAt(i), i);
-        }
-
         StringBuilder orderedString = new StringBuilder(s);
         var orderedIndex = 0;
         for (char actualCharToOrder: order.toCharArray()) {
