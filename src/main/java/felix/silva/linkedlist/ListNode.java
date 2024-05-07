@@ -1,5 +1,7 @@
 package felix.silva.linkedlist;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
 public class ListNode {
@@ -8,6 +10,16 @@ public class ListNode {
     ListNode() {}
     ListNode(int val) {
         this.val = val;
+    }
+
+    ListNode(@NotNull int[] vals) {
+        this.val = vals[0];
+        ListNode node = new ListNode(vals[1]);
+        this.next = node;
+        for (int i = 2; i < vals.length; i++) {
+            node.next = new ListNode(vals[i]);
+            node = node.next;
+        }
     }
 
     ListNode(int val, ListNode next) {
