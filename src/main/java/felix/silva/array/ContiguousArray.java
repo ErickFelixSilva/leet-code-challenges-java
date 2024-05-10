@@ -1,8 +1,5 @@
 package felix.silva.array;
 
-import felix.silva.Utils;
-
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
