@@ -11,7 +11,6 @@ public class Subsets {
         for (int i=1; i < nums.length; i++) {
             subsets.addAll(newSubsets(nums[i], subsets));
         }
-        System.out.println(subsets);
         return subsets;
     }
 
